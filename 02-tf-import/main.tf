@@ -1,6 +1,6 @@
 data "checkpoint_management_show_objects" "query" {
     type = "host"
-    filter = "checkpoint_management_show_objects"
+    filter = "testshan"
 }
 
 # terraform plan -generate-config-out=policy/generated.tf

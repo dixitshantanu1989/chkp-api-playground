@@ -4,10 +4,10 @@ data "checkpoint_management_show_objects" "query" {
 }
 
 # terraform plan -generate-config-out=policy/generated.tf
-/*import {
+import {
     to = checkpoint_management_host.imported
     id = data.checkpoint_management_show_objects.query.objects[0].uid
-}*/
+}
 
 module "policy" {
   source = "./policy"
